@@ -1,0 +1,20 @@
+.s{
+    right: 50px;
+    bottom: 10px;
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+.vh-93{
+    height: 93vh;
+}
+.vh-7{
+    height: 7vh;
+}
+.scroll{
+    overflow:auto;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
