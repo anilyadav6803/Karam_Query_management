@@ -14,6 +14,11 @@ import Viewalluser from './adminapp/Viewalluser.jsx';
 import ViewallPenQuery from './adminapp/Viewallpenquery.jsx';
 import Viewallcomquery from './adminapp/Viewallcomquery.jsx';
 import Viewallproquery from './adminapp/Viewallproquery.jsx';
+import ViewProQuery from './userapp/Viewproquery.jsx';
+import Viewcomquery from './userapp/Viewcomquery.jsx';
+import Services from './mainapp/Services.jsx';
+import Careers from './mainapp/Careers.jsx';
+import Contact from './mainapp/Contact.jsx';
 
 function App() {
   return (
@@ -35,6 +40,12 @@ function App() {
         <Route path="/viewallpenquery" element={<ViewallPenQuery />} />
         <Route path="/viewallcomquery" element={<Viewallcomquery />} />
         <Route path="/viewallproquery" element={<Viewallproquery />} />
+        <Route path="/viewproquery/:id" element={<ViewProQuery />} />
+        <Route path="/viewcomquery/:id" element={<Viewcomquery />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/contact" element={<Contact />} />
+
     </Routes>
     </BrowserRouter>
     </div>
