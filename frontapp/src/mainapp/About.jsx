@@ -22,7 +22,41 @@ const About = () => {
         </div>
         <div className='col-md-5 mx-auto'>
             <img src={a1}  className='w-100'/>
+
+
         </div>
+
+        <section id="about" className="py-5 bg-light">
+      <div className="container">
+        <div className="row align-items-center">
+        <div className="col-md-6">
+            <img
+              src= "https://www.karam.in/sites/default/files/2023-04/lakhnow-overview.jpg"
+              alt="Industrial Solutions"
+              className="img-fluid rounded shadow-lg"
+            />
+          </div>
+          <div className="col-md-6 mb-4 mb-md-0">
+            <h2 className="display-4 mb-4">About Karam</h2>
+            <p className="lead">
+              At [KARAM], we specialize in providing cutting-edge industrial solutions to help businesses
+              improve efficiency, safety, and overall operations. With a focus on technology and innovation, we
+              are proud to offer a diverse range of services designed to meet the needs of modern industry.
+            </p>
+            <p>
+              Our mission is to empower businesses by offering tailored solutions in manufacturing, logistics, and
+              safety compliance. Our team is committed to delivering excellence, ensuring that your operations
+              run smoothly, and meeting the highest safety standards.
+            </p>
+            <p>
+              Let us help you achieve your industrial goals with expert advice, top-notch services, and the latest
+              in industrial technology.
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    </section>
     </div>
     <Footer/>
     </>
