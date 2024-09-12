@@ -22,6 +22,24 @@ queryRoute.get('/getpenquery/:id', async (req, res) => {
         res.status(500).json({ error: 'Error fetching pending queries' });
     }
 });
+queryRoute.get('/getproquery/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const result = await Query.find({ uid: id, status: 'pro' }); // Assuming status 'pen'
+        res.json({ result });
+    } catch (error) {
+        res.status(500).json({ error: 'Error fetching pending queries' });
+    }
+});
+queryRoute.get('/getcomquery/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const result = await Query.find({ uid: id, status: 'com' }); // Assuming status 'pen'
+        res.json({ result });
+    } catch (error) {
+        res.status(500).json({ error: 'Error fetching pending queries' });
+    }
+});
 
 // Route to add a new query
 queryRoute.post('/addquery', async (req, res) => {
