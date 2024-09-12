@@ -23,17 +23,20 @@ const Navbar = () => {
                     <Link class="nav-link" to={'/about'}>About Us</Link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href=" ">Services</a>
+                 <Link class="nav-link" to={'/services'}>Services</Link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" >Carrer</a>
+                    <Link class="nav-link" to={'/careers'}>Careers</Link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" >Contact Us</a>
+                    <Link class="nav-link" to={'/contact'}>Contact</Link>
                   </li>
                 </ul>
+                <div className='d-flex gap-3'>
                 <Link to={'/login'} className='btn btn-danger text-light'>Query</Link>
                 <Link to={'/adlogin'} className='btn btn-danger text-light'>Admin</Link>
+                </div>
+                
               </div>
             </div>
           </nav>
