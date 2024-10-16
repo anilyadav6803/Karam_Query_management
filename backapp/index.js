@@ -8,9 +8,20 @@ const userRouter=require('./routes/userRoute');
 const queryRoute = require('./routes/queryRoute');
 const adRoute = require('./routes/adRoute');
 
+
+app.use(cors({
+    origin: ['https://deploy-mern-lwhq.vercel.app'], // Add trusted origins
+    methods: ['POST', 'GET'], // Allow only required HTTP methods
+    credentials: true // Enable credentials like cookies
+}));
+
 mongoose.connect('mongodb://127.0.0.1:27017/karam')
 .then(()=>console.log("Connection Done 👍"))
 .catch((err)=>console.log("Error Found 😒",err));
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 
 
 
