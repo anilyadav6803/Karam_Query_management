@@ -1,5 +1,7 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import axios from 'axios';
+import { useState } from 'react';
 import Home from './mainapp/Home';
 import About from './mainapp/About';
 import Registration from './mainapp/Registration';
@@ -21,6 +23,21 @@ import Careers from './mainapp/Careers.jsx';
 import Contact from './mainapp/Contact.jsx';
 
 function App() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  axios.defaults.withCredentials = true;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    axios.post('https://karam-query-management.vercel.app/register', { name, email, password })
+      .then((result) => console.log(result))
+      .catch((err) => console.log(err));
+  }
+
+
   return (
     <>
     <div className='container-fluid'>

@@ -15,7 +15,7 @@ const Registration = () => {
     const regcode = async (e)=>{
         e.preventDefault();
         const user={firstname,lastname,email,password};
-        const response=await fetch('http://localhost:8000/',{
+        const response=await fetch('https://karam-query-management.vercel.app/',{
             method:'POST',
             headers:{
                 "Content-Type":"application/json",

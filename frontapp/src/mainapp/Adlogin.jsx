@@ -12,7 +12,7 @@ const Adlogin = () => {
     const adlog = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:8000/adadmin', {
+            const response = await fetch('https://karam-query-management.vercel.app/adadmin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
