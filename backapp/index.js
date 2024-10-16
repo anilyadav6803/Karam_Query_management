@@ -10,7 +10,7 @@ const adRoute = require('./routes/adRoute');
 
 
 app.use(cors({
-    origin: ['https://deploy-mern-lwhq.vercel.app'], // Add trusted origins
+    origin: ['https://karam-query-management-frontapp.vercel.app/'], // Add trusted origins
     methods: ['POST', 'GET'], // Allow only required HTTP methods
     credentials: true // Enable credentials like cookies
 }));
